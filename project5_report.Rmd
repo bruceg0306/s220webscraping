@@ -1,0 +1,46 @@
+---
+title: "Project 5"
+author: "Bruce Guo"
+date: "2024-05-22"
+output:
+  html_document:
+    code_folding: hide
+subtitle: "Creating data from digital sources"
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo=TRUE, message=FALSE, warning=FALSE, error=FALSE)
+```
+
+## Part A
+
+The data context that I explored in Part A of the project was the performance of champions in League of Legends, and which champions are doing well currently. I selected this data context since I play League, and how well champions are doing in the current meta is quite important as a League player since it reveals a lot about who you should play, and who will be scary to play against.
+
+```{r file='partA.R'}
+
+```
+
+## Part B
+
+```{r file='partB.R', results='hide'}
+
+```
+
+The features on the text from Hon David Seymour's releases were as follows: the mean amount of letters in the title of the releases is `r mean(release_data$mean_title_length)`, the mean amount of letters in the text of the releases is `r mean(release_data$mean_content_length)`, the number of letters in the longest sentence is `r max(release_data$max_content_length)`, and the median of the amount of letters in the shortest sentence in the releases is `r median(release_data$min_content_length)`.
+
+## Part C
+
+```{r file='partC.R'}
+
+```
+
+My visualisation reveals the distribution of the years that the releases were released, based on the keyword that they were based on.
+
+## Learning Reflection
+
+Something very important that I learned from Module 5: Creating data from digital sources, was how to properly data scrape from websites online, but not only that but how to do it safely, checking the robots.txt file along with the Terms and Services to see what they allow you to scrape. What I'd be more curious about exploring further would be what more I can do with the html code while data scraping, seeing as I only understand the bare basics of it due to data scraping, but don't know what else I could do in that regard with html with all its tags and stuff like that.
+
+## Self Review
+
+Across the five projects that I've completed in this course, definitely one of the biggest key skills that I've learned from doing these projects is how I can actually use the theory from the code that I've learned in this course in practical ways. The projects let me practice the code, showing me how I can mutate data, how I can display it in graphs that are useful, how to scrape data from websites, and all of that cool stuff. I had the opportunity to make my very own memes, my own gifs, and everything. Another key skill that these projects taught me was how to use R Markdown to report back on things in the projects. Learning Outcome 4, 'Develop communication skills, including using reproducible reporting with R Markdown is a part of this. At the end of every project, using R Markdown to knit an html file that covered everything I did was required, so it taught me how to display things with it. It also taught me how to use css to spice it up too, changing the formatting and colours in the html file, which was cool too.
+
